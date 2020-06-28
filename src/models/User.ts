@@ -1,22 +1,31 @@
-import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn } from 'typeorm';
+/* eslint-disable camelcase */
+import {
+  Entity,
+  Column,
+  PrimaryGeneratedColumn,
+  CreateDateColumn,
+  UpdateDateColumn,
+} from 'typeorm';
 
 @Entity('users')
-class User{
-    @PrimaryGeneratedColumn('uuid')
-    id: string;
+class User {
+  @PrimaryGeneratedColumn('uuid')
+  id: string;
 
-    @Column()
-    name: string;
+  @Column()
+  name: string;
 
-    @Column()
-    password: string;
+  @Column()
+  password: string;
 
-    @CreateDateColumn()
-    create_at: Date;
+  @Column()
+  email: string;
 
-    @UpdateDateColumn()
-    update_at: Date;
+  @CreateDateColumn()
+  create_at: Date;
 
+  @UpdateDateColumn()
+  update_at: Date;
 }
 
 export default User;
