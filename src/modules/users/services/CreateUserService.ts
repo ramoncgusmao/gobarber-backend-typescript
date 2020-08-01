@@ -1,5 +1,5 @@
 import { hash } from 'bcryptjs';
-
+import 'reflect-metadata';
 import User from '@modules/users/infra/typeorm/entities/User';
 import IUsersRepository from '@modules/users/repositories/IUsersRepository';
 import { injectable, inject } from 'tsyringe';

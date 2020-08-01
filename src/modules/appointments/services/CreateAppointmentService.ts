@@ -1,3 +1,4 @@
+import 'reflect-metadata';
 import { startOfHour } from 'date-fns';
 import AppError from '@shared/errors/AppError';
 import { injectable, inject } from 'tsyringe';
@@ -8,6 +9,7 @@ interface IRequest {
   provider_id: string;
   date: Date;
 }
+
 @injectable()
 class CreateAppointmentService {
   constructor(
