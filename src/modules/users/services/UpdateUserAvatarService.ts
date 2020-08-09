@@ -1,6 +1,4 @@
-import path from 'path';
-import fs from 'fs';
-import uploadConfig from '@config/upload';
+import 'reflect-metadata';
 import AppError from '@shared/errors/AppError';
 import User from '@modules/users/infra/typeorm/entities/User';
 import IUsersRepository from '@modules/users/repositories/IUsersRepository';

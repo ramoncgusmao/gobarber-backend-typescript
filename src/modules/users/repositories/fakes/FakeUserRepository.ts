@@ -1,4 +1,3 @@
-import 'reflect-metadata';
 import User from '@modules/users/infra/typeorm/entities/User';
 import ICreateUsersDTO from '@modules/users/dtos/ICreateUsersDTO';
 import IUsersRepository from '@modules/users/repositories/IUsersRepository';
