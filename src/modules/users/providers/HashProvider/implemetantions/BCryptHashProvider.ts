@@ -3,11 +3,11 @@ import IHashProvider from '../models/IHashProvider';
 
 class BCryptHashProvider implements IHashProvider {
   generateHash(payload: string): Promise<string> {
-    throw new Error('Method not implemented.');
+    return hash(payload, 8);
   }
 
   compareHash(payload: string, hashed: string): Promise<boolean> {
-    throw new Error('Method not implemented.');
+    return compare(payload, hashed);
   }
 }
 
