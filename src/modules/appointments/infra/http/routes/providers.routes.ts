@@ -20,5 +20,9 @@ providersRouter.get(
   '/:provider-id/day-availability',
   dayAvailabilityController.index,
 );
+providersRouter.get(
+  '/:provider-id/day-appointment',
+  dayAvailabilityController.index,
+);
 
 export default providersRouter;
