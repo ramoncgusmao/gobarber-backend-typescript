@@ -1,7 +1,7 @@
 import 'reflect-metadata';
 import { injectable, inject } from 'tsyringe';
 import User from '@modules/users/infra/typeorm/entities/User';
-import IUsersRepository from '@modules/users/repositories/IUsersRepository';
+import IUsersRepository from '@modules/users/repositories/repositories/';
 import AppError from '@shared/errors/AppError';
 import IHashProvider from '../providers/HashProvider/models/IHashProvider';
 
