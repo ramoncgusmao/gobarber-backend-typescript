@@ -2,7 +2,6 @@ import fs from 'fs';
 import uploadConfig from '@config/upload';
 import path from 'path';
 import aws, { S3 } from 'aws-sdk';
-import { fil } from 'date-fns/locale';
 import IStorageProvider from '../models/IStorageProvider';
 
 class S3StorageProvider implements IStorageProvider {

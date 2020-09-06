@@ -7,10 +7,10 @@ export default class ProviderAppointmentsController {
   public async index(request: Request, response: Response): Promise<Response> {
     const { month, year, day } = request.body;
     const provider_id = request.user.id;
-    const listProviderDayAvailabilityService = container.resolve(
+    const listProviderAppointmentService = container.resolve(
       ListProviderAppointmentsService,
     );
-    const availability = await listProviderDayAvailabilityService.execute({
+    const availability = await listProviderAppointmentService.execute({
       provider_id,
       month,
       year,
